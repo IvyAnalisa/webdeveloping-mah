@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="inl3_style.css" rel="stylesheet" type="text/css">
+	<title>Inlämningsuppgiften 3</title>
+</head>
+<body>
+	
+    <h1>Inlämningsuppgift 3</h1>
+    <form method="GET" action="http://webshare.mah.se/tszagh/response.php">
+    <!--Kontakuppgifter-->
+        <fieldset>
+            <legend>Kontakupggifter</legend>
+			
+            <label>Namn:<input type="text"  name="Namn" value="text" placeholder="Namn här..." required/></label><br/>
+
+            <label>Ålder:<input type="number" name="Ålder" value="number" placeholder="Ålder här..." required/></label>
+            
+        </fieldset>
+    <!--Besöket på blomstermålabladet-->
+        <fieldset>
+            <legend>Dina besök på blomstermålabladet</legend>
+                <p>Hur ofta besöker du blomstermåladbladet?</p>
+                    <label> <input type="radio"  name="freq" value="varje dag" required />Varje dag</label><br/>
+                    <label> <input type="radio"  name="freq" value="varannan dag" required/>Varannan dag</label><br/>
+                    <label> <input type="radio"  name="freq" value="varje vecka" required />Varje vecka</label><br/>
+            <p>Vilken delar av blomstermålabladet?</p>	
+                    <label> <input type="checkbox"  name="visits" value="Nyheter" />Nyheter</label><br/>
+					<label> <input type="checkbox"  name="visits" value="Utrikes" />Utrikes</label><br/>
+                    <label>  <input type="checkbox"  name="visits" value="Inrikes" />Inrikes</label><br/>
+                    <label>  <input type="checkbox"  name="visits" value="sport" />Sport</label><br/>
+                    <label>  <input type="checkbox"  name="visits" value="Skvaller" />Skvaller</label><br/>
+                    <label>  <input type="checkbox"  name="visits" value="väder" />Väder</label><br/>
+                    <label>  <input type="checkbox"  name="visits" value="övrigt" />Varje vecka</label><br/>
+        </fieldset>
+    <!--Vinn en T-shirt-->
+        <fieldset>
+                <legend>Vinn en T-shirtQ!</legend>
+                <p>Ni har möjlighet att vinna en T-shirt om ni fyller i föjlande information</p>
+						<p>Bästa med blomstermålabladet </p>	
+						<textarea   name="best" value="best"></textarea>						
+
+						<p>Sämsta med blomstermålabladet </p>	
+						<textarea  name="worst" value="worst"></textarea><br>
+						<label>E-mail: <input type="email" name="email"  placeholder="t.ex.anton@mah.se"   maxLength="64" required /></label>			
+																		
+                        <p>Storlek   </p>                
+						
+                             <select name="size" multiple="multiple"  >
+                                <optgroup label="Storlek">
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option  value ="M" selected="M">M</option>
+							        <option  value ="L">L</option>
+                                    <option value="XL">XL</option>
+                                </optgroup>
+
+                            </select>
+                        
+						
+        </fieldset>
+        <fieldset>
+        <legend>Skicka/Återställ</legend>
+        
+         <button type="submit"   >Skicka</button> 
+        <button type="reset" value="Återställ fomulär">Återställ fomulär</button>
+        </fieldset>
+    </form>
+</body>
+</html>

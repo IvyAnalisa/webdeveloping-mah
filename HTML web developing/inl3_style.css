@@ -1,0 +1,32 @@
+input.text{
+    position:absolute;
+    left:80px;
+    font-family: cursive;
+}
+input #email{
+    position:absolute;
+    left:80px;
+    font-family: cursive;
+}
+body{
+    background-image:url( "heart.png");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+fieldset{
+    font-family: cursive;
+}
+h1 {
+    font-family: cursive;
+    font-style:oblique;
+}
+legend {
+       font-style:italic;
+       font-family: cursive;
+       text-decoration: underline;
+}
+button{
+    font-family: cursive;
+}
